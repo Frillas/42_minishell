@@ -8,11 +8,16 @@ fix expander :
 bash > $9USER
 bash > USER : command not found
 ---------------------------------------------------------------------------------------------
-fix here_doc signal : Ctrl+\ should quit here_doc
+bash> cat 
+Ctrl+\ should quit and write : 
+^\Quit (core dumped)
 ---------------------------------------------------------------------------------------------
 fun command to fix: ./minishell | ./minishell 
 if (isatty(STDIN_FILENO))
 ---------------------------------------------------------------------------------------------
 free add_history
+---------------------------------------------------------------------------------------------
+no malloc protection in here_doc for GNL
+I need to add an error code in GNL to check malloc error
 ---------------------------------------------------------------------------------------------
 then let's try bonus
