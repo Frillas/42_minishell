@@ -34,6 +34,9 @@ make
 ```bash
 ./minishell
 ```
+## Bugs or leaks
+
+- If you see one of them, it's Nico's fault.
 
 ## Contributors
 
